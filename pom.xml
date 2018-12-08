@@ -1,20 +1,20 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
 	<groupId>com.appleframework.pay</groupId>
 	<artifactId>alipay-trade-sdk</artifactId>
-	<version>1.0</version>
+	<version>2.0</version>
 	<packaging>jar</packaging>
-
 	<name>alipay-trade-sdk</name>
 	<url>http://maven.apache.org</url>
 
 	<dependencies>
+
 		<dependency>
-			<groupId>com.appleframework.pay</groupId>
+			<groupId>com.alipay.sdk</groupId>
 			<artifactId>alipay-sdk-java</artifactId>
-			<version>20161103220103</version>
+			<version>3.4.49.ALL</version>
 		</dependency>
 
 		<dependency>
@@ -28,33 +28,33 @@
 			<artifactId>commons-configuration</artifactId>
 			<version>1.10</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>com.google.code.gson</groupId>
 			<artifactId>gson</artifactId>
 			<version>2.7</version>
 		</dependency>
-		
+
 		<dependency>
-		    <groupId>com.google.zxing</groupId>
-		    <artifactId>core</artifactId>
-		    <version>2.1</version>
+			<groupId>com.google.zxing</groupId>
+			<artifactId>core</artifactId>
+			<version>2.1</version>
 		</dependency>
-		
+
 	</dependencies>
-	
+
 	<!-- 配置maven地址 -->
 	<distributionManagement>
 		<repository>
-			<id>nexus-releases</id>
+			<id>apple-releases</id>
 			<name>Local Nexus Releases Repository</name>
-			<url>http://mvnrepo.appleframework.com:8081/nexus/content/repositories/releases</url>
+			<url>http://nexus.appleframework.com:8081/nexus/content/repositories/releases</url>
 		</repository>
 
 		<snapshotRepository>
-			<id>nexus-snapshots</id>
+			<id>apple-snapshots</id>
 			<name>Local Nexus Snapshots Repository</name>
-			<url>http://mvnrepo.appleframework.com:8081/nexus/content/repositories/snapshots</url>
+			<url>http://nexus.appleframework.com:8081/nexus/content/repositories/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
 </project>
